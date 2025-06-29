@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alexandra Lupe Palma Mamani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #18181f;
+      --sidebar: #323844;
+      --content: #565c68;
+      --accent: #e1cfa9;
+      --text: #f5eee2;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    nav {
+      background-color: var(--bg);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      border-bottom: 2px solid var(--text);
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .intro {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .intro h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin: 0 0 30px;
+    }
+
+    .box {
+      background-color: var(--accent);
+      color: var(--bg);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 500px;
+      line-height: 1.5;
+    }
+
+    .profile-photo {
+      flex: 1;
+      text-align: center;
+    }
+
+    .profile-photo img {
+      max-width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    section {
+      margin: 50px auto;
+      background-color: var(--content);
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 900px;
+    }
+
+    section h2 {
+      margin-top: 0;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    section a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    section a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: square inside;
+      padding-left: 0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .intro, .profile-photo {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#sobre-mi">SOBRE MI</a>
+    <a href="#habilidades">MIS HABILIDADES</a>
+    <a href="#cursos">MIS CURSOS</a>
+    <a href="#colegas">MIS COLEGAS DE LA UNIVERSIDAD</a>
+    <a href="#contacto">DONDE ENCONTRARME</a>
+  </nav>
+
+  <div class="container" id="home">
+    <div class="intro">
+      <h1>Hola, yo soy Alexandra Palma</h1>
+      <div class="box">
+        Hola, soy estudiante de tercer semestre de <a href="https://ucsp.edu.pe/carreras/administracion-negocios/">Administración de Negocios</a> en la <a href="https://ucsp.edu.pe/">Universidad Católica San Pablo</a>. Además, estudio inglés en el <a href="https://cultural.edu.pe/nosotros/">Centro Cultural Peruano Norteamericano</a> para ampliar mis oportunidades profesionales a nivel internacional.
+      </div>
+    </div>
+    <div class="profile-photo">
+      <img src="foto.png" alt="Foto de Alexandra Palma">
+    </div>
+  </div>
+
+  <section id="habilidades">
+    <h2>Mis Habilidades</h2>
+    <ul>
+      <li>Creativa</li>
+      <li>Asertividad</li>
+      <li>Trabajo en equipo</li>
+      <li>Resolución de problemas</li>
+    </ul>
+  </section>
+
+  <section id="cursos">
+    <h2>Mis Cursos Actuales</h2>
+    <ul>
+      <li>Análisis Financiero: <a href="https://www.linkedin.com/in/mar%C3%ADa-bel%C3%A9n-bocchio-linares-96846035">Profesora Maria Bocchio</a></li>
+      <li>Comportamiento del consumidor: <a href="https://pe.linkedin.com/in/miguel-salomon-529453125">Profesor Miguel Salomón</a></li>
+      <li>Filosofía de la Naturaleza: <a href="https://www.linkedin.com/in/isabelmoralesb">Profesora Isabel Morales</a></li>
+      <li>Historia del Occidente: <a href="https://www.linkedin.com/in/amparo-isela-chalco-ch%C3%A1vez-8185512aa/">Profesora Amparo Chalco</a></li>
+      <li>Introducción de Ciencia de la Computación: <a href="https://www.linkedin.com/in/ecuadrosv/">Profesor Ernesto Cuadros</a></li>
+      <li>Liderazgo: <a href="https://pe.linkedin.com/in/pablo-nu%C3%B1ez-saija-08b892174">Profesor Pablo Nuñez</a></li>
+      <li>Cálculo en una variable</li>
+    </ul>
+  </section>
+
+  <section id="colegas">
+    <h2>Mis Colegas de la Universidad</h2>
+    <ul>
+      <li><a href="https://greciameza.github.io/Grecia-Meza-page/">Grecia Meza Caballero</a></li>
+      <li><a href="https://vaniabusta10.github.io">Vania Bustamante</a></li>
+      <li><a href="https://lindsay051206.github.io/Lindsay-Alanna-Perochena-Obreg-n/">Lindsay Perochena Obregon</a></li>
+      <li><a href="https://alejandragarcia10.github.io/Alejandra-Garc-a-Apaza/">Alejandra García</a></li>
+      <li><a href="https://claudia-flores-qbob.github.io/">Claudia Flores</a></li>
+      <li><a href="https://sharmi-creator672.github.io/">Sharmelyn Delgado</a></li>
+      <li><a href="https://diegorodrigotalaveracasquino.github.io/">Diego Talavera</a></li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Donde encontrarme</h2>
+    <ul>
+      <li>Github</li>
+      <li><a href="https://www.linkedin.com/in/alexandra-palma-mamani-91b182297">LinkedIn</a></li>
+      <li>Correo electrónico: alexandra.palma@ucsp.edu.pe</li>
+    </ul>
+  </section>
+</body>
+</html>
